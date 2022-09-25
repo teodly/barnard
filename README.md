@@ -3,10 +3,11 @@
 barnard is a terminal-based client for the [Mumble](https://mumble.info) voice
 chat software.
 
-This FORK adds two new features:
+This FORK adds three new features:
 
 - the -tx flag will cause barnard to start transmitting as soon as it is launched.
 - the -channel flag will cause barnard to join the given channel.
+- display help text on startup
 
 Example:
 ````
