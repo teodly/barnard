@@ -29,7 +29,7 @@ To fetch and build:
 
 ````
 apt install libalut-dev libopus-dev
-go install layeh.com/barnard@latest
+go install github.com/farmergreg/barnard@latest
 ````
 
 After running the command above, `barnard` will be compiled as `$(go env GOPATH)/bin/barnard`.
