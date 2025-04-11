@@ -62,6 +62,9 @@ func (b *Barnard) OnDisconnect(e *gumble.DisconnectEvent) {
 	}
 	b.UiTree.Rebuild()
 	b.Ui.Refresh()
+
+	b.Client.Disconnect()
+	b.Ui.Close()
 }
 
 func (b *Barnard) OnTextMessage(e *gumble.TextMessageEvent) {
