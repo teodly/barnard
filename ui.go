@@ -171,7 +171,7 @@ func (b *Barnard) OnUiInitialize(ui *uiterm.Ui) {
 	}
 
 	if b.StartupChannel != "" {
-		b.Client.Self.Move(b.Client.Channels.Find(b.StartupChannel))
+		b.Client.Self.Move(b.Client.Channels.Find(strings.Split(b.StartupChannel, "/")...))
 	}
 }
 
